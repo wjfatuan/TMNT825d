@@ -7,6 +7,10 @@ android {
     namespace = "co.edu.uan.android.tmnt825d"
     compileSdk = 33
 
+    buildFeatures {
+        viewBinding = true
+    }
+
     defaultConfig {
         applicationId = "co.edu.uan.android.tmnt825d"
         minSdk = 28
