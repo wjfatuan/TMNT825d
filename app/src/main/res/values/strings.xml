@@ -1,3 +1,11 @@
 <resources>
-    <string name="app_name">TMNT825d</string>
+    <string name="app_name">TMNT Viernes</string>
+    <string name="turtle_leo">Leonardo, commonly nicknamed Leo, is a superhero appearing in Teenage Mutant Ninja Turtles comics and related media, and created by American comic book artists Kevin Eastman and Peter Laird. He is one of the four central characters of the franchise, along with his brothers, Donatello, Raphael and Michelangelo.</string>
+    <string name="turtle_raf">Raphael, nicknamed Raph, is a superhero and one of the four main
+        characters of the Teenage Mutant
+        Ninja Turtles comics and all related media. In most iterations,
+        he is depicted as the most aggressive of the turtle brothers,
+        physically the strongest, and often at odds with his brother, Leonardo.</string>
+    <string name="turtle_mikey">  </string>
+    <string name="turtle_donatello">  </string>
 </resources>

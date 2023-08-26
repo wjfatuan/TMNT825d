@@ -11,20 +11,37 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater) // creando el binding de la actividad
         setContentView(binding.root) // usar el layout contenido en el binding
         binding.btnMikey.setOnClickListener {
-            showTurtle(R.drawable.mikey)
+            showTurtle("mikey")
         }
         binding.btnRaf.setOnClickListener {
-            showTurtle(R.drawable.raf)
+            showTurtle("raf")
         }
         binding.btnLeo.setOnClickListener {
-            showTurtle(R.drawable.leo)
+            showTurtle("leo")
         }
         binding.btnDonatello.setOnClickListener {
-            showTurtle(R.drawable.donatello)
+            showTurtle("donatello")
         }
     }
 
-    fun showTurtle(img: Int) {
-        binding.imgTurtle.setImageResource(img)
+    fun showTurtle(name: String) {
+        when (name) {
+            "mikey" -> {
+                binding.imgTurtle.setImageResource(R.drawable.mikey)
+                binding.txtDescription.text = resources.getText(R.string.turtle_mikey).toString()
+            }
+            "leo" -> {
+                binding.imgTurtle.setImageResource(R.drawable.leo)
+                binding.txtDescription.text = resources.getText(R.string.turtle_leo).toString()
+            }
+            "raf" -> {
+                binding.imgTurtle.setImageResource(R.drawable.raf)
+                binding.txtDescription.text = resources.getText(R.string.turtle_raf).toString()
+            }
+            else -> {
+                binding.imgTurtle.setImageResource(R.drawable.donatello)
+                binding.txtDescription.text = resources.getText(R.string.turtle_donatello).toString()
+            }
+        }
     }
 }
