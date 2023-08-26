@@ -25,23 +25,9 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun showTurtle(name: String) {
-        when (name) {
-            "mikey" -> {
-                binding.imgTurtle.setImageResource(R.drawable.mikey)
-                binding.txtDescription.text = resources.getText(R.string.turtle_mikey).toString()
-            }
-            "leo" -> {
-                binding.imgTurtle.setImageResource(R.drawable.leo)
-                binding.txtDescription.text = resources.getText(R.string.turtle_leo).toString()
-            }
-            "raf" -> {
-                binding.imgTurtle.setImageResource(R.drawable.raf)
-                binding.txtDescription.text = resources.getText(R.string.turtle_raf).toString()
-            }
-            else -> {
-                binding.imgTurtle.setImageResource(R.drawable.donatello)
-                binding.txtDescription.text = resources.getText(R.string.turtle_donatello).toString()
-            }
-        }
+        val imgId = resources.getIdentifier(name, "drawable", packageName)
+        binding.imgTurtle.setImageResource(imgId)
+        val textId = resources.getIdentifier("turtle_$name", "string", packageName)
+        binding.txtDescription.text = resources.getText(textId).toString()
     }
 }
