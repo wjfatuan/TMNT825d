@@ -8,4 +8,9 @@
         physically the strongest, and often at odds with his brother, Leonardo.</string>
     <string name="turtle_mikey">  </string>
     <string name="turtle_donatello">  </string>
+    <string-array name="turtle_names">
+        <item>Leo</item>
+        <item>Raf</item>
+        <item>Mikey</item>
+    </string-array>
 </resources>
